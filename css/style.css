@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&family=Questrial&family=Spline+Sans:wght@300..700&display=swap');
+
+body{
+    font-family: "Spline Sans", sans-serif;
+    color: #777;
+    line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+}
+a:hover{
+    color: #f58d17;
+}
+img{
+    width: 100%;
+}
+
+.shadow-on-hover{
+    transition: all 0.3s;
+}
+.shadow-on-hover:hover{
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.padding-section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+/* -------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 14px; /* عرض الشريط */
+}
+
+/* تخصيص الجزء الذي يتحرك داخل شريط التمرير */
+::-webkit-scrollbar-thumb {
+    background-color: #f58d17; /* اللون البرتقالي */
+    border-radius: 6px; /* جعل الحواف مستديرة */
+    border: 3px solid #fff; /* إضافة حافة بيضاء حوله */
+}
+
+/* تخصيص الجزء الذي يحيط بشريط التمرير */
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; 
+    border-radius: 6px;
+}
+
+/* ------------------------------------------------- */
+
+ /* btn */
+.btn{
+    border-radius: 0;
+    padding: 14px 38px;
+}
+.btn-brand{
+    background-color: #f58d17;
+    color: #fff;
+    border-color: #f58d17;
+}
+.btn-brand:hover{
+    background-color: #d37810;
+    border-color: #d37810;
+    color: #fff;
+}
+
+/* -------slider */
+.slide1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../fastfood/backg/ttg.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+    
+}
+.slide2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../fastfood/backg/360_F_595497335_LXmQUCnyuAiYErNn4y5MvTeyqShW8MlX.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+    
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+}
+
+#carouselExampleInterval h6::after,
+#carouselExampleInterval h6::before{
+    content: " ";
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+/* -----about */
+#about .divider{
+    width: 60px;
+    height: 3px;
+    display: block;
+    background-color: #f58d17;
+    margin: auto;
+}
+
+
+
+
+/* -----intro text  */
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0 auto;
+}
+
+/* menu */
+#menu .nav-pills .nav-link{
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+#menu .nav-pills .nav-link.active{
+    background-color: #f58d17;
+    color: white;
+}
+.menu-item .stars{
+    color: #f58d17;
+}
+.menu-content h5 a{
+    color: white;
+}
+.menu-content h5 a:hover{
+    color: #f58d17;
+}
+
+/* -----features */
+/* #features{
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../fastfood/backg/360_F_595497335_LXmQUCnyuAiYErNn4y5MvTeyqShW8MlX.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+} */
+
+#features {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../fastfood/backg/360_F_595497335_LXmQUCnyuAiYErNn4y5MvTeyqShW8MlX.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
+}
+
+.feature{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.feature .feature-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #f58d17;
+    color: #fff;
+    display: inline-grid;
+    align-content: center;
+    text-align: center;
+    font-size: 28px;
+    place-items: center
+}
+
+/* ----team */
+.team-member img{
+    max-width: 140px;
+    box-shadow: -10px -10px 0 #f58d17;
+}
+
+/* --reviews */
+#reviews{
+    background: url(../fastfood/backg/pexels-wolfart-29249674.jpg);
+    background-position: center ;
+    background-size:cover ;
+    background-repeat: no-repeat ;
+    height: 100vh; 
+    width: 100vw;
+}
+.review img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.review .quite-icon{
+    font-size: 70px;
+    color: #f58d17;
+    line-height: 1;
+}
+.review .stars{
+    color: #f58d17;
+}
+#reviews .carousel-indicators{
+    margin-bottom: -3rem;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f58d17;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    transition: transform 0.2s ease; /* تأثير الحركة */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    transform: scale(1.1); /* تكبير عند التمرير */
+}
+
+.carousel-indicators button {
+    background-color: #ffbe0b;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #f58d17; /* لون النقطة النشطة */
+    transform: scale(1.2); /* تكبير النقطة النشطة */
+}
+
+/* ----reservation */
+#reservation .form-control{
+    border-radius: 0;
+}
+#reservation .form-control:focus{
+    box-shadow: none;
+    border-color: #f58d17;
+}
+#reservation input.form-control{
+    height: 47px;
+    overflow: hidden;
+}
+
+/* ----insta */
+.insta-posts{
+    position: relative;
+}
+.insta-posts .insta-btn{
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.insta-posts img{
+    transition: all 0.3s;
+}
+.insta-posts:hover img{
+    transform: scale(0.89);
+}
+.insta-posts:hover .insta-btn{
+    opacity: 1;
+}
+
+/* ----blog */
+.blog-post img{
+    width: 40%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .blog-post{
+        flex-direction: column;
+    }
+
+    .blog-post img{
+        width: 100%;
+    }
+}
+
+/* ---footer  */
+footer a {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: cursive;
+
+}
+footer{
+    background: url(../fastfood/backg/footer.jpg);
+    background-position: center ;
+    background-size:cover ;
+    background-repeat: no-repeat ;
+    height: 100vh; 
+    width: 100vw; 
+  
+}
+
+.footer-top{
+    margin-bottom: 30px;
+}
+
+footer p{
+    color: #fff;
+}
+footer .social-links a{
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.footer-bottom{
+    padding-top: 30px;
+    border-top:1px solid rgba(255, 255, 255, 0.4) ;
+}
+
+
+
+
+.nav-pills .nav-link {
+    flex: 1; /* يجعل كل زر يأخذ مساحة متساوية */
+    text-align: center; /* محاذاة النص في المنتصف */
+    margin: 0 5px; /* مسافة بسيطة بين الأزرار */
+}
+
+.nav-pills .nav-item {
+    width: 100%; /* اجعل كل عنصر يمتد بعرض النافذة */
+    max-width: 150px; /* حد أقصى لعرض كل عنصر */
+}
+
+@media (max-width: 768px) {
+    .nav-pills {
+        flex-wrap: wrap; /* يلف العناصر في الشاشات الصغيرة */
+    }
+    .nav-pills .nav-item {
+        flex-basis: 45%; /* عرض كل عنصر نصف الشاشة تقريبًا */
+        margin-bottom: 10px; /* مسافة بين الأزرار العمودية */
+    }
+}
